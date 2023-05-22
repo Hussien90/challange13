@@ -1,0 +1,154 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-heading {
+    min-height: 100vh;
+    background-image: url(/images/bg-desktop.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-heading .container {
+    width: 85%;
+
+}
+
+.box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1024px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+.box .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    border-radius: 10px;
+    border-top-right-radius: 40%;
+    width: 25%;
+}
+
+@media(max-width:1024px) {
+    .box .left {
+        width: 75%;
+    }
+}
+
+.box .left .log {
+    width: 100%;
+}
+
+.box .left .icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.left .icons img {
+    border: 9px solid hsl(229, 57%, 11%);
+    background-color: hsl(229, 57%, 11%);
+}
+
+.box .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: hsl(228, 56%, 26%);
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    height: 60%;
+    margin-top: 40px;
+}
+
+@media(max-width:1024px) {
+    .box .right {
+        width: 75%;
+    }
+}
+
+.right .highlight {
+    color: hsl(243, 100%, 93%);
+}
+
+.right p {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.right .number {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    right: 50px;
+    gap: 10px;
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+@media(max-width:1024px) {
+    .right .number {
+        bottom: -47px;
+        right: 70px;
+    }
+}
+
+.right .number::after {
+    content: "";
+    position: absolute;
+    border: 12px solid white;
+    right: 0px;
+    bottom: -17px;
+    border-bottom-left-radius: 100%;
+}
+
+@media(max-width:1024px) {
+    .right .number::after {
+        border: none;
+    }
+}
+
+.right .number .num {
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+}
+
+.right .scroll :in-range {
+    color: hsl(229, 57%, 11%);
+
+}
+
+.right .number span {
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.right .gb {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(243, 100%, 93%);
+    font-size: 10px;
+}
